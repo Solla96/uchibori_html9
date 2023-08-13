@@ -1,0 +1,525 @@
+/* SP（モバイル）用の CSS */
+
+body {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #ffffff;
+}
+a,
+p,
+h1,
+h2,
+li {
+  font-family: "Noto Sans JP";
+}
+main{
+  background-color: #ECEEEF;
+}
+.header_container {
+  height: 8vw;
+  display: flex;
+  align-items: center;
+}
+.header_container img {
+  width: 21.9vw;
+  margin-left: 38px;
+}
+.header_container nav {
+  display: none;
+}
+/* Headのスタイル */
+.head {
+  position: relative;
+}
+.head img {
+  width: 100%;
+}
+.title {
+  position: absolute;
+  color: #727272;
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+}
+.title h1 , h2{
+  font-family: "Noto Serif JP", Bold;
+  font-size: 9.33vw;
+}
+
+.title h2 {
+  font-size: 5.33vw;
+}
+
+/* コンテンツのスタイル */
+.introduce_section{
+  margin: 40px 0px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.27vw;
+  margin-bottom: 12vw;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.heading::before {
+  content: "";
+  width: 10px;
+  height: 20px;
+  background-color: #ef4565;
+}
+
+.heading p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.circle {
+  position: relative;
+  width: 21.3vw;
+  max-width: 250px;
+  min-width: 80px;
+  aspect-ratio: 1 / 1;
+  background-color: #90b4ce;
+  border: #90b4ce;
+  border-radius: 50%;
+}
+
+.circle p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5vw;
+  color: #ffffff;
+  width: max-content;
+}
+
+/* コンテンツの詳細のスタイル */
+.introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 54px;
+}
+.intro_image p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50%);
+  width: 21.3vw;
+  aspect-ratio: 8 / 3;
+  color: #ffffff;
+  background-color: #90b4ce;
+  font-size: 13px;
+}
+.intro_image img {
+  width: 80vw;
+  aspect-ratio: 3 / 2;
+}
+.intro_detail {
+  display: block;
+}
+
+.intro_detail {
+  width: 80vw;
+  background-color: white;
+  padding: 5.3vw;
+  padding-top: 4vw;
+  box-shadow: -1px 5px 10px #0000001A;
+}
+
+.intro_detail h1 {
+  font-size: 4.27vw;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 2.67vw;
+}
+
+.intro_detail p {
+  font-size: 3.47vw;
+  line-height: 1.85;
+}
+/* articleのスタイル */
+.article_section{
+  padding: 40px ;
+  background-color: #ffffff;
+}
+/* Productのスタイル */
+.product_section {
+  width: 80vw;
+  margin: 0 auto;
+}
+.heading {
+  margin-bottom: 4.27vw;
+}
+.upper img {
+  width: 80vw;
+  aspect-ratio: 3 / 2;
+}
+.lower {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.67vw;
+}
+.lower img {
+  width: 38.67vw;
+  aspect-ratio: 1 / 0.67;
+}
+.product h1 {
+  font-family: "Noto Serif JP", serif;
+  font-size: 4.27vw;
+  padding-left: 3.2vw;
+  margin-top: 12vw;
+}
+.product h2 {
+  font-family: "Noto Sans JP", serif;
+  font-size: 4.27vw;
+  text-align: end;
+}
+.product_contents p,
+li {
+  font-size: 3.47vw;
+}
+.product_contents li {
+  text-indent: 1rem;
+  line-height: 1.46em;
+}
+.request_section{
+  padding: 40px ;
+  background-color: #ffffff;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+::placeholder{
+  color: ;
+}
+.name , .mail{
+  display: block;
+  height: 26px;
+  border: 1px solid #707070;
+  padding-left: 7px;
+}
+#name , #mail , #request{
+  margin-bottom: 10px;
+}
+#mail, #request{
+  margin-top: 25px;
+}
+#name::after, #mail::after{
+  content: "必須";
+  color:#FFFFFF;
+  background-color: red;
+  font-size: 10px;
+  width: 26px;
+  height: 15px;
+  padding: 4px;
+}
+
+.request {
+  display: flex;
+  width: 67.7vw;
+  aspect-ratio: 1 / 0.22;
+  background-color: #606e79;
+  align-items: center;
+  border-radius: 5px;
+  margin: 30px auto;
+}
+.request a {
+  margin: 0 auto;
+  font-size: 4.27vw;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Noto Sans JP";
+}
+.request span::after {
+  content: "";
+  display: flex;
+  width: 3vw;
+  aspect-ratio: 1 / 1;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translateX(-24.5px) rotate(-45deg);
+  position: relative;
+}
+
+.submit_btn{
+  position: relative;
+  display: block;
+  margin: 30px auto;
+  width: 100px;
+  height: 26px;
+  font-size: 13px;
+  color: #FFFFFF;
+  background-color: #697FBD;
+  border: 1px solid #707070;
+}
+
+/* フッタースタイル */
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  height: 41px;
+  border-top: 1px solid #707070;
+}
+footer p {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+/* PCサイズ用のスタイル */
+@media (min-width: 768px) {
+  /* ヘッダー、ナビのスタイル */
+  header li {
+    float: left;
+    height: 4.38vw;
+    display: flex;
+    align-items: center;
+  }
+  header a {
+    font-size: 1vw;
+    color: #000000;
+    padding-left: 2vw;
+  }
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+    width: 62.5vw;
+    height: 4.38vw;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .header_container img {
+    width: 12.3vw;
+    height: 2.5vw;
+    margin-left: 0;
+  }
+  .header_container nav {
+    display: flex;
+  }
+  /* ヘッドのスタイル */
+  .head {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 45vw;
+  }
+  .title {
+    width: 62.5vw;
+    max-width: 1000px;
+    padding-top: 2.44vw;
+  }
+  .head img {
+    width: 62.5vw;
+    height: 33.1vw;
+  }
+  .title h1 {
+    font-size: 3.12vw;
+    margin-right: 4.88vw;
+  }
+  .title h2 {
+    font-size: 1.88vw;
+    margin-right: 5vw;
+  }
+  /* コンテンツのスタイル */
+  .heading::before {
+    content: "";
+    width: 20px;
+    height: 52px;
+  }
+  .heading p {
+    font-size: 35px;
+  }
+  .container {
+    width: 62.5vw;
+    margin: 0 auto;
+  }
+  .contents {
+    margin-top: 5.62vw;
+  }
+  .circle {
+    width: 15.62vw;
+  }
+  .circle p {
+    font-size: 1.56vw;
+  }
+  /* Introduceのスタイル */
+  .intro_image p {
+    position: absolute;
+    width: 7.5vw;
+    aspect-ratio: 1 / 0.417;
+    z-index: 3;
+    left: -28.15vw;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    font-size: 1.25vw;
+  }
+  .intro_detail {
+    position: relative;
+    width: 48.8vw;
+    height: 12.2vw;
+    z-index: 1;
+    padding: 0;
+    padding-top: 1.625vw;
+    padding-left: 3.75vw;
+    border-radius: 10px;
+  }
+  .intro_image {
+    position: relative;
+  }
+  .intro_image img {
+    position: absolute;
+    width: 20vw;
+    aspect-ratio: 1 / 0.75;
+    z-index: 2;
+    display: flex;
+    transform: translate(14.38vw, -7.5vw);
+  }
+  .intro_detail h1 {
+    font-size: 1.25vw;
+    padding: 0;
+    margin-bottom: 1.25vw;
+  }
+  .intro_detail p {
+    font-size: 1vw;
+    line-height: 1.5;
+    width: 29.38vw;
+  }
+  .first p,
+  .third p {
+    font-size: 0;
+  }
+  .first p::before {
+    font-size: 1vw;
+    content: "Ysビューティーセットのふわふわ濃密泡がお肌に吸着し、もっちりとした赤ちゃん肌に早変わり。気になる毛穴やシミもいつもの洗顔を変えるだけでエイジングケアできます！";
+  }
+  .third p::before {
+    font-size: 1vw;
+    content: "Ysビューティーセットの美容液を使うことで、しっかりと洗浄した後に肌をキュッと引き締めることができます。カミソリに負けないさらさらとした触り心地の肌に早変わり！";
+  }
+  .introduce {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 1000px;
+    width: 62.5vw;
+    margin: 0 auto;
+    margin-bottom: 180px;
+    transform: translate(-3vw);
+  }
+  /* articleのスタイル */
+  .article_section{
+    margin: 0 auto;
+    width: 100vw;
+    background-color: #FFFFFF;
+  }
+  /* Productのスタイル */
+  .product_section {
+    height: 47.88vw;
+  }
+
+  .product_images,
+  .product_details {
+    width: 50%;
+    margin: 0;
+    float: left;
+  }
+  .upper img {
+    width: 25vw;
+    aspect-ratio: 1 / 0.67;
+  }
+  .lower {
+    width: 25vw;
+    margin-top: 1.25vw;
+  }
+  .lower img {
+    width: 11.88vw;
+    aspect-ratio: 1 / 0.67;
+  }
+  .product_details {
+    height: 25.88vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .product h1,
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .product h1 {
+    font-size: 2.19vw;
+    font-weight: bold;
+    width: 29.7vw;
+  }
+  .product h2 {
+    font-size: 2.19vw;
+    margin-top: 0.88vw;
+  }
+  .product_contents p,
+  li {
+    font-size: 1.25vw;
+  }
+  .product_contents {
+    width: 26.25vw;
+  }
+  .product_details {
+    width: 26.25vw;
+  }
+  .product {
+    width: 26.25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .request {
+    width: 26.25vw;
+    aspect-ratio: 1 / 0.183;
+    margin: 0 auto;
+  }
+  .request a {
+    margin: 0;
+    margin-left: 2.2vw;
+    font-size: 1.25vw;
+  }
+  .request span::after {
+    width: 0.93vw;
+    aspect-ratio: 1 / 1;
+    border-right: 0.19vw solid white;
+    border-bottom: 0.19vw solid white;
+    transform: translate(13.57vw, -125%) rotate(-45deg);
+    position: relative;
+  }
+  .request span::before {
+    display: flex;
+    width: 2.38vw;
+    content: "";
+    aspect-ratio: 1 / 1;
+    border-bottom: 0.19vw solid white;
+    position: relative;
+    transform: translate(12.12vw, -25%) rotate(0deg);
+  }
+}
